@@ -3,14 +3,47 @@
     {
       "id": 1,
       "title": "bacon plant",
-      "decription": "Plant-based burger with Bacon, vegan smoked gouda",
+      "description": "Plant-based burger with Bacon, vegan smoked gouda",
       "serve": "2 servings",
-      "time" : "55 mins"
+      "time" : "55 mins",
+      "photo": "burger1.png"
+    },
+    {
+      "id": 2,
+      "title": "bacon plant",
+      "description": "Plant-based burger with Bacon, vegan smoked gouda",
+      "serve": "2 servings",
+      "time" : "55 mins",
+      "photo": "burger1.png"
+    },
+    {
+      "id": 3,
+      "title": "bacon plant",
+      "description": "Plant-based burger with Bacon, vegan smoked gouda",
+      "serve": "2 servings",
+      "time" : "55 mins",
+      "photo": "burger2.png"
+    },
+    {
+      "id": 4,
+      "title": "bacon plant",
+      "description": "Plant-based burger with Bacon, vegan smoked gouda",
+      "serve": "2 servings",
+      "time" : "55 mins",
+      "photo": "burger3.png"
+    },
+    {
+      "id": 5,
+      "title": "bacon plant",
+      "description": "Plant-based burger with Bacon, vegan smoked gouda",
+      "serve": "2 servings",
+      "time" : "55 mins",
+      "photo": "burger4.png"
     }
   ],
   "customers": [
     {
-      "id": 1,
+      "id": 5,
       "firstname": "Florence",
       "lastname": "Nway",
       "email": "",
@@ -18,7 +51,9 @@
       "mobileNumber": "",
       "postcode": "",
       "orders": [{
-
+        "name": "",
+        "quantity": 0,
+        "product_id": 1
       }]
     }
   ]
