@@ -2,18 +2,24 @@
   "Recipes": [
     {
       "id": 1,
-      "title": "json-server",
-      "author": "typicode"
+      "title": "bacon plant",
+      "decription": "Plant-based burger with Bacon, vegan smoked gouda",
+      "serve": "2 servings",
+      "time" : "55 mins"
     }
   ],
-  "comments": [
+  "customers": [
     {
       "id": 1,
-      "body": "some comment",
-      "postId": 1
+      "firstname": "Florence",
+      "lastname": "Nway",
+      "email": "",
+      "password":"",
+      "mobileNumber": "",
+      "postcode": "",
+      "orders": [{
+
+      }]
     }
-  ],
-  "profile": {
-    "name": "typicode"
-  }
+  ]
 }
