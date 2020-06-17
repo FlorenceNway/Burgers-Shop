@@ -1,0 +1,10 @@
+.recipes {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+
+    .recipe{
+        border: 1px solid black;
+        margin: 10px;
+    }
+}
