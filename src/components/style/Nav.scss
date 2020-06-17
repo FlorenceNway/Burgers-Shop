@@ -1,0 +1,47 @@
+.nav {
+    display: flex;
+    background: grey;
+    justify-content: flex-end;
+
+    li {
+        margin: 10px;
+        cursor: pointer;
+    }
+    a {
+        text-decoration: none;
+        color: black;
+        position: relative;
+
+        &.active::before {
+            content: "";
+            padding: 1px 18px;
+            top: 30px;
+            left: 12px;
+            position: absolute;
+            background: #FFC700;
+            cursor: pointer;
+        }
+        &:hover {
+            color: #ccc;
+        }
+    }
+    
+    .menu {
+            display: flex;
+            justify-content: flex-end;
+            margin-right: 40px;
+        li{
+
+        }
+    }
+    .cart {
+            display: flex;
+            justify-content: flex-end;
+            margin-right: 10px;
+        li {
+
+        }
+    }
+    
+    
+}
