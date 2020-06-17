@@ -1,6 +1,6 @@
 import React, { useState,useEffect } from 'react';
 import API from './API'
-import burger from '../images/burgers/burger1.png'
+import "./style/Recipes.scss"
 
 const Recipes = () => {
 
@@ -15,15 +15,17 @@ const Recipes = () => {
     return <div>
         <h1>Recipes</h1>
         <button>Get Started</button>
+        <ul className="recipes">
         {recipes.map(recipe => (
-            <ul>
-                <li>{recipe.title}</li>
-                <li>{recipe.description}</li>
-                <li>
-                    <img src={`/src/images/burgers/burger1.png`}></img>
+            <div className="recipe">
+                <li key={recipe.id}>{recipe.title}</li>
+                <li key={recipe.id}>{recipe.description}</li>
+                <li key={recipe.id}>
+                    <img src={`./burgers/${recipe.photo}`}></img>
                 </li>
-            </ul>
+            </div>
         ))}
+        </ul>
     </div>
 }
 
