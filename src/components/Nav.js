@@ -5,12 +5,10 @@ import './style/Nav.scss';
 const Nav = () => {
     return <div className="nav">
         <ul className="menu">
-            <NavLink activeClassName="active" to="/">
-                <li>ON THE MENU</li>
-            </NavLink>
-            <NavLink activeClassName="active" to="/recipes">
-                <li>RECIPES</li>
-            </NavLink>
+            
+            <li><NavLink exact={true} activeClassName="active" to="/">ON THE MENU</NavLink></li>
+            <li><NavLink activeClassName="active" to="/recipes">RECIPES</NavLink></li>
+            
             <li>WINE</li>
             <li>GIFTS</li>
             <li>MARKET</li>
