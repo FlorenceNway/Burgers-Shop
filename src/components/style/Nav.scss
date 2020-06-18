@@ -2,6 +2,7 @@
     display: flex;
     background: grey;
     justify-content: flex-end;
+    height: 60px;
 
     li {
         margin: 10px;
@@ -15,12 +16,12 @@
         &.active::before {
             content: "";
             padding: 1px 18px;
-            top: 30px;
-            left: 12px;
+            top: 21px;
             position: absolute;
             background: #FFC700;
             cursor: pointer;
         }
+        
         &:hover {
             color: #ccc;
         }
@@ -42,6 +43,4 @@
 
         }
     }
-    
-    
 }
