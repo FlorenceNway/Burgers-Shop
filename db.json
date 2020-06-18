@@ -43,18 +43,18 @@
   ],
   "customers": [
     {
-      "id": 5,
+      "id": 1,
       "firstname": "Florence",
       "lastname": "Nway",
       "email": "",
       "password":"",
       "mobileNumber": "",
-      "postcode": "",
-      "orders": [{
-        "name": "",
-        "quantity": 0,
-        "product_id": 1
-      }]
+      "postcode": ""
+    }
+  ],
+  "orders": [
+    {
+      
     }
   ]
 }
