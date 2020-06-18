@@ -2,7 +2,7 @@
   "Recipes": [
     {
       "id": 1,
-      "title": "bacon plant",
+      "title": "Cheese Burger",
       "description": "Plant-based burger with Bacon, vegan smoked gouda",
       "serve": "2 servings",
       "time" : "55 mins",
@@ -10,7 +10,7 @@
     },
     {
       "id": 2,
-      "title": "bacon plant",
+      "title": "Miso Burger",
       "description": "Plant-based burger with Bacon, vegan smoked gouda",
       "serve": "2 servings",
       "time" : "55 mins",
@@ -18,7 +18,7 @@
     },
     {
       "id": 3,
-      "title": "bacon plant",
+      "title": "Prawn Burger",
       "description": "Plant-based burger with Bacon, vegan smoked gouda",
       "serve": "2 servings",
       "time" : "55 mins",
@@ -26,7 +26,7 @@
     },
     {
       "id": 4,
-      "title": "bacon plant",
+      "title": "Salmon Burger",
       "description": "Plant-based burger with Bacon, vegan smoked gouda",
       "serve": "2 servings",
       "time" : "55 mins",
@@ -34,7 +34,7 @@
     },
     {
       "id": 5,
-      "title": "bacon plant",
+      "title": "Bacon Plant",
       "description": "Plant-based burger with Bacon, vegan smoked gouda",
       "serve": "2 servings",
       "time" : "55 mins",
