@@ -2,7 +2,9 @@ import React from 'react';
 import { NavLink } from 'react-router-dom';
 import './style/Nav.scss';
 
-const Nav = () => {
+const Nav = ({qtyCounter}) => {
+
+
     return <div className="nav">
         <ul className="menu">
             
@@ -14,7 +16,7 @@ const Nav = () => {
             <li>MARKET</li>
         </ul>
         <ul className="cart">
-            <li>CART</li>
+            <li><NavLink to="/cart">CART</NavLink><span>{qtyCounter}</span></li>
         </ul>
     </div>
 }
