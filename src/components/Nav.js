@@ -1,5 +1,6 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
+import cart from '../images/basket.png'
 import './style/Nav.scss';
 
 const Nav = ({qtyCounter}) => {
@@ -16,7 +17,7 @@ const Nav = ({qtyCounter}) => {
             <li>MARKET</li>
         </ul>
         <ul className="cart">
-            <li><NavLink to="/cart">CART</NavLink><span>{qtyCounter}</span></li>
+            <li><NavLink to="/cart"><img src={cart}></img></NavLink><span>{qtyCounter}</span></li>
         </ul>
     </div>
 }
