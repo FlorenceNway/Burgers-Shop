@@ -25,7 +25,7 @@ const Footer = () => {
                 </ul>
                 <ul>
                     <li>Follow Us</li>
-                    <li><img src={social}></img></li>
+                    <li><img src={require('../images/socialIcon.png')}></img></li>
                 </ul>
             </div>
 }
