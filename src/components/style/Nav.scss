@@ -3,10 +3,12 @@
     background-color: transparent;
     justify-content: flex-end;
     height: 60px;
+    width: 100%;
     position: absolute;
-    top: 9px;
-    right: 13px;
+     top: 0px;
+     right: 0px;
     color: white;
+    background-image: url('/bgImages/navBg.png');
 
     li {
         margin: 15px;
