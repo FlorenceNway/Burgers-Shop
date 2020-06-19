@@ -1,16 +1,47 @@
 import React from 'react';
-import {NavLink} from 'react-router-dom';
+import Cover from './Cover';
 import './style/OnTheMenu.scss'
 
 const OnTheMenu = () => {
-    return <div className="coverPage">
-                <div className="coverText">
-                    <h1> Order our top-rated recipes today!</h1>
-                    <NavLink to="/recipes" activeClassName={'active'}>
-                        <button>GET STARTED</button>
-                    </NavLink>
+
+    return  <>
+            <Cover />
+            <section className={"introlSection"}>
+            <div className="intro1">
+                <div>
+                    <div className="text">
+                        <h1>Choose your meals</h1>
+                        <p>Our chef-designed recipes include balanced Mediterranean meals, quick one-pan dinners, and top-rated customer favorites</p>
+                    </div>
+                </div>
+                <div className="img">
+                    <img src={require('../images/side1.svg')}></img>
                 </div>
             </div>
+            <div className="intro2">
+                <div>
+                    <div className="text">
+                        <h1>Unpack your box</h1>
+                        <p>We guarantee the freshness of all our ingredients and deliver them in an insulated box right to your door.</p>
+                    </div>  
+                </div>
+                <div className="img">
+                    <img src={require('../images/side2.svg')}></img>
+                </div>
+            </div>
+            <div className="intro3">
+                <div>
+                    <div className="text">
+                        <h1>Choose your meals</h1>
+                        <p>Following our step-by-step instructions you’ll experience the magic of cooking recipes that our chefs create with your family’s tastes in mind.</p>
+                    </div>
+                </div>
+                <div>
+                    <img src={require('../images/side3.svg')}></img>
+                </div>
+            </div>
+            </section>
+            </>
 }
 
 export default OnTheMenu;
