@@ -1,0 +1,23 @@
+.orderDetails {
+    display: flex;
+    width: 100%;
+
+    .orders {
+        width: 50%;
+        height: auto;
+        display: flex;
+        margin-top: 50px;
+        flex-wrap: wrap;
+    
+        .recipe {
+            margin: 20px;
+        }
+    }
+    
+    .customers {
+        width: 50%;
+        margin-top: 90px;
+    }
+}
+
+
