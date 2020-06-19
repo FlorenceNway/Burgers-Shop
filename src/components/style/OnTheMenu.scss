@@ -1,0 +1,24 @@
+.coverPage {
+    height: 100vh;
+    width: 100%;
+    background-image: url('/bgImages/Landingbg.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    .coverText {
+        width: 442px;
+        position: absolute;
+        top: 43%;
+        color: white;
+        left: 54%;
+        font-size: 1.5em;
+    }
+
+    button {
+        color: white;
+        margin-top: 20px;
+        padding: 9px 20px;
+        background: transparent;
+        border: 2px solid #FFC700;
+    }
+}
