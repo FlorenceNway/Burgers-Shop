@@ -1,6 +1,5 @@
 import React, { useState,useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import clock from "../images/clock.svg"
 import Cover from './Cover';
 import API from './API'
 import "./style/Recipes.scss"
@@ -27,11 +26,11 @@ const Recipes = () => {
                     <Link to={`/recipes/${recipe.id}`}>
                         <div className="recipe">
                              <li key={recipe.photo} className="recipePhoto">
-                                <img src={`./burgers/${recipe.photo}`}></img>
+                                <img src={require(`../images/burgers/${recipe.photo}`)}></img>
                             </li>
                             <li key={recipe.title}>{recipe.title}</li>
                             <li key={recipe.id}>{recipe.description}</li>
-                            <li><img src={clock}></img><span>{recipe.time}</span></li>
+                            <li><img src={require('../images/clock.svg')}></img><span>{recipe.time}</span></li>
                         </div>
                     </Link>
                     
