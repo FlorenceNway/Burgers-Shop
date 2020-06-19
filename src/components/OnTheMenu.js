@@ -15,7 +15,7 @@ const OnTheMenu = () => {
                     </div>
                 </div>
                 <div className="img">
-                    <img src={require('../images/side1.svg')}></img>
+                    <img src={require('../images/side1.png')}></img>
                 </div>
             </div>
             <div className="intro2">
@@ -26,18 +26,18 @@ const OnTheMenu = () => {
                     </div>  
                 </div>
                 <div className="img">
-                    <img src={require('../images/side2.svg')}></img>
+                    <img src={require('../images/side2.png')}></img>
                 </div>
             </div>
             <div className="intro3">
                 <div>
                     <div className="text">
-                        <h1>Choose your meals</h1>
+                        <h1>Create magic</h1>
                         <p>Following our step-by-step instructions you’ll experience the magic of cooking recipes that our chefs create with your family’s tastes in mind.</p>
                     </div>
                 </div>
                 <div>
-                    <img src={require('../images/side3.svg')}></img>
+                    <img src={require('../images/side3.png')}></img>
                 </div>
             </div>
             </section>
