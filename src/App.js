@@ -6,18 +6,30 @@ import OnTheMenu from "./components/OnTheMenu";
 import Recipes from "./components/Recipes";
 import RecipeDetail from "./components/RecipeDetail";
 import OrderDetail from "./components/OrderDetail";
+import Footer from './components/Footer';
 
 function App() {
 	const [qtyCounter, setQtyCounter] = useState(0)
 	const [orders, setOrders] = useState([])
-	const [order, setOrder] = useState({})
+	const [order, setOrder] = useState(null)
 
 
 	useEffect(() => {
-		// setOrder(order)
-		if(Object.keys(order).length !== 0) {
-			setOrders([...orders, order])
+		
+		const localCart = [...orders]
+		const itemIndexInCart = localCart.findIndex((item) => item.id === order.id);
+	
+		if (itemIndexInCart !== -1) {
+		localCart[itemIndexInCart].qty += 1;
+		} else {
+			if(order){
+				localCart.push(order);
+			}	
 		}
+
+		console.log(localCart)
+		setOrders(localCart)
+		
 	},[order])
 
 	return 	<Router>
@@ -40,6 +52,7 @@ function App() {
 							<OrderDetail qtyCounter={qtyCounter} orders={orders}/>
 						</Route>
 					</Switch>
+					<Footer />
 					
 				</div>
 			</Router>
