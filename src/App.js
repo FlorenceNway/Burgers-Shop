@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React, {useState, useEffect} from "react";
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 import "./App.css";
 import Nav from "./components/Nav";
@@ -10,6 +10,15 @@ import OrderDetail from "./components/OrderDetail";
 function App() {
 	const [qtyCounter, setQtyCounter] = useState(0)
 	const [orders, setOrders] = useState([])
+	const [order, setOrder] = useState({})
+
+
+	useEffect(() => {
+		// setOrder(order)
+		if(Object.keys(order).length !== 0) {
+			setOrders([...orders, order])
+		}
+	},[order])
 
 	return 	<Router>
 				<div className="App">
@@ -22,12 +31,13 @@ function App() {
 							path='/recipes/:id'
 							render={(props) => (
 								<RecipeDetail {...props} setQtyCounter={setQtyCounter} qtyCounter={qtyCounter} 
+								order={order} setOrder={setOrder} orders={orders}
 								/>
 							)}
 						/>
 
 						<Route path="/cart" >
-							<OrderDetail qtyCounter={qtyCounter}/>
+							<OrderDetail qtyCounter={qtyCounter} orders={orders}/>
 						</Route>
 					</Switch>
 					
