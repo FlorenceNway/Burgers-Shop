@@ -1,16 +1,21 @@
 .nav {
     display: flex;
-    background: grey;
+    background-color: transparent;
     justify-content: flex-end;
     height: 60px;
+    position: absolute;
+    top: 9px;
+    right: 13px;
+    color: white;
 
     li {
-        margin: 10px;
+        margin: 15px;
         cursor: pointer;
+        font-weight: 600;
     }
     a {
         text-decoration: none;
-        color: black;
+        color: white;
         position: relative;
 
         &.active::before {
