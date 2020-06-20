@@ -19,7 +19,6 @@ const OrderDetail = ({orders, qtyCounter, setQtyCounter}) => {
 
     //setOrders([...orders, order])
     
-
     const submitHandler = (event) => {
         event.preventDefault()
         localOrders.push({customer:customerDetails})
@@ -45,17 +44,31 @@ const OrderDetail = ({orders, qtyCounter, setQtyCounter}) => {
     }
 
     return  <div className="orderDetails">
-                <form onSubmit={submitHandler} className={'customers'}>
-                    <div className="field">
-                        <label className="label">First Name</label>
-                        <input className="input" type="text" name="firstname" onChange={customerInfoChangeHandler} required />
-                    </div>
-                    <div className="field">
-                        <label className="label">Last Name</label>
-                        <input className="input" type="text" name="lastname" onChange={customerInfoChangeHandler} required />
-                    </div>
-                    <button type="submit">Submit</button>
+                <form onSubmit={submitHandler} className={'customersDetails'}>
+                    <p className="title">your details</p>
+                        <select>
+                            <option>Title</option>
+                            <option value="Mr">Mr</option>
+                            <option value="Ms">Ms</option>
+                        </select>
+                        <div className="firstLast">
+                            <input className="input" type="text" name="firstname" placeholder={'First Name*'} onChange={customerInfoChangeHandler} required />
+
+                            <input className="input" type="text" name="lastname" placeholder={'Last Name*'} onChange={customerInfoChangeHandler} required />
+                        </div>
+                        <input className="input" type="email" name="email" placeholder={'Email Address*'} onChange={customerInfoChangeHandler} required />
+
+                        <input className="input" type="text" name="password" placeholder={'Password*'} onChange={customerInfoChangeHandler} required />
+
+                    <p className='title'>contact number<span>*</span></p>
+                        <input className="input" type="text" name="lastname" placeholder={'Mobile Number*'} onChange={customerInfoChangeHandler} required />
+ 
+                    <p className='title'>delivery address<span>*</span></p>
+                        <input className="input" type="text" name="lastname" placeholder={'Postcode*'} onChange={customerInfoChangeHandler} required />
+                  
+                     <button type="submit">SUBMIT</button>
                 </form>
+
                 <ul className="orders">
 
                 {localOrders.map(order => (
