@@ -1,0 +1,90 @@
+.recipeDetail {
+    .recipe {
+        display: flex;
+        width: 100%;
+        height: 400px;
+        margin-top: 80px;
+    
+        .photo {
+            width: 50%;
+    
+            img {
+                width: 100%;
+            }
+        }
+    
+        .detail {
+            display: flex;
+            flex-direction: column;
+            width: 50%;
+            height: 400px;
+            justify-content: center;
+            align-items: center;
+    
+            button {
+                width: 50%;
+                padding: 10px 20px;
+                cursor: pointer;
+            }
+        }
+    
+    }
+}
+.ingredients {
+    background-image: url('../../../src/images/ingredient.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    color: white;
+    height: 600px;
+    justify-content: flex-end;
+
+    div {
+        width: 50%;
+        margin: 20px;
+        background-image: url('/backgroundShapes/shape1.png'),
+                        url('/backgroundShapes/shape2.png'), 
+                        url('/backgroundShapes/juice.svg');
+            background-repeat: no-repeat;
+            background-position: bottom 51px left 415px, top 90px left 546px,  bottom 255px left 319px;
+    }
+    .header {
+        display: flex;
+        flex-direction: column;
+        height: 100px;
+        font-size: 18px;
+        font-weight: 600;
+        p{
+            &:first-child {
+                margin: 10px 0;
+            }
+            &:last-child {
+                padding: 10px 30px;
+                background-color: #FFC700;
+                font-weight: 700;
+            }
+        }
+        
+    }
+    .list {
+        display: flex;
+
+        .measure {
+            display: flex;
+            flex-direction: column;
+            margin: 10px 20px 10px 0;
+            font-style: italic;
+            font-weight: lighter;
+        }
+        .ingredient {
+            display: flex;
+            flex-direction: column;
+            margin: 10px;
+            
+        }
+        li {
+            margin: 5px 0;
+        }
+    }
+    
+}
