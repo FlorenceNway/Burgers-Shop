@@ -39,8 +39,45 @@ a {
                 img {
                     width: 100%;
                     cursor: pointer;
+                    position: relative;
                 }
+                
+        }
+        .title {
+            background: #FFC700;
+            padding: 10px 10px;
+            color: white;
+            position: absolute;
+            margin-left: 10px;
+            margin-top: -70px;
+        }
+        .description {
+            width: 80%;
+            margin: 20px;
+        }
+        .time {
+            margin: 20px;
+
+            span {
+                color: #FFC700;
             }
+            img {
+                margin-right: 10px;
+            }
+        }
         
     }
+    
+}
+.seemore {
+    padding: 10px 20px;
+    background: #FFC700;
+    width: 240px;
+    margin: 40px auto;
+    font-size: 1.2em;
+    display: flex;
+    justify-content: center;
+    border:none;
+    font-weight: bold;
+    cursor: pointer;
 }
