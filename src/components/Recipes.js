@@ -25,17 +25,17 @@ const Recipes = () => {
                 {recipes.map(recipe => (
                     <Link to={`/recipes/${recipe.id}`}>
                         <div className="recipe">
-                             <li key={recipe.photo} className="recipePhoto">
+                             <li className="recipePhoto" key={recipe.photo} >
                                 <img src={require(`../images/burgers/${recipe.photo}`)}></img>
                             </li>
-                            <li key={recipe.title}>{recipe.title}</li>
-                            <li key={recipe.id}>{recipe.description}</li>
-                            <li><img src={require('../images/clock.svg')}></img><span>{recipe.time}</span></li>
+                            <li className="title" key={recipe.title} >{recipe.title}</li>
+                            <li className="description" key={recipe.id}>{recipe.description}</li>
+                            <li className="time"><img src={require('../images/clock.svg')}></img><span>{recipe.time}</span></li>
                         </div>
                     </Link>
-                    
                 ))}
                 </ul>
+                <button className="seemore">SEE MORE</button>
             </div>
 }
 
