@@ -3,23 +3,25 @@ import { Link } from 'react-router-dom';
 import Cover from './Cover';
 import API from './API'
 import "./style/Recipes.scss"
+import ExploreMenu from './ExploreMenu';
 
 const Recipes = () => {
 
     const [recipes, setRecipes] = useState([])
+    const [number, setNumber] = useState(6)
 
     useEffect(() => {
-        API.getRecipes().then(recipes => setRecipes(recipes))
+        API.getRecipes(number).then(moreRecipes => setRecipes([...recipes,...moreRecipes]))
     },[])
 
+    const seeMore = () => {
+        setNumber(number + 3)
+        API.getRecipes(number + 3).then(recipes => setRecipes(recipes))
+    }
+
     return  <div className="recipesPage">
-                <Cover />
-                <section className="text">
-                    <div>
-                        <h1>Explore our Menus</h1>
-                        <p>Choose from an ever-changing mix of meat, fish, Beyond Meat™, WW Approved, Diabetes Friendly recipes and health-conscious offerings.</p>
-                    </div> 
-                </section>
+                <Cover scroll/>
+                <ExploreMenu/>
                 
                 <ul className="recipes">
                 {recipes.map(recipe => (
@@ -35,7 +37,7 @@ const Recipes = () => {
                     </Link>
                 ))}
                 </ul>
-                <button className="seemore">SEE MORE</button>
+                <button className="seemore" onClick={seeMore}>SEE MORE</button>
             </div>
 }
 
