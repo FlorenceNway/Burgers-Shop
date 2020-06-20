@@ -1,0 +1,43 @@
+.specialOffer {
+    background-image: url('../../../src/images/bgImages/spPlainBg.png'),url('../../../src/images/bgImages/spImg.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+    div {
+        margin: auto;
+        height: 543px;
+        position: relative;
+
+        .speText{
+            display: flex;
+            justify-content: flex-start;
+            height: 44%;
+
+            img{
+                width: 400px;
+                height: 300px;
+                margin: -62px 70px;
+            
+            }
+        }
+        .hmText{
+            display: flex;
+            flex-direction: column;
+            position: absolute;
+            left: 35%;
+            height: 200px;
+
+            p {
+                font-size: 50px;
+                color: #FFC700;
+            }
+            button {
+                color: #FFC700;
+                padding: 11px 34px;
+                border: 1px solid #FFC700;
+                width: 188px;
+                background: transparent;
+                margin: auto;
+            }
+        }
+
+}    }
