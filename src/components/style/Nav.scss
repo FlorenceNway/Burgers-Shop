@@ -5,8 +5,8 @@
     height: 60px;
     width: 100%;
     position: absolute;
-     top: 0px;
-     right: 0px;
+    top: 0px;
+    right: 0px;
     color: white;
     background-image: url('../../../src/images/bgImages/navBg.png');
 
@@ -31,6 +31,9 @@
         
         &:hover {
             color: #ccc;
+        }
+        &.disabled {
+            pointer-events: none;
         }
     }
     
