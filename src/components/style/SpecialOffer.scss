@@ -23,11 +23,11 @@
             display: flex;
             flex-direction: column;
             position: absolute;
-            left: 35%;
+            left: 33%;
             height: 200px;
 
             p {
-                font-size: 50px;
+                font-size: 70px;
                 color: #FFC700;
             }
             button {
@@ -37,6 +37,7 @@
                 width: 188px;
                 background: transparent;
                 margin: auto;
+                cursor: pointer;
             }
         }
 
