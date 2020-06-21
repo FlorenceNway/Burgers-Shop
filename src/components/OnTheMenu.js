@@ -5,7 +5,7 @@ import './style/OnTheMenu.scss'
 const OnTheMenu = () => {
 
     return  <>
-            <Cover />
+            <Cover/>
             <section className={"introlSection"}>
             <div className="intro1">
                 <div>
