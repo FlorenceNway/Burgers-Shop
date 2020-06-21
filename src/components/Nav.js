@@ -1,10 +1,9 @@
-import React from 'react';
+import React,{useState, useEffect} from 'react';
 import { NavLink } from 'react-router-dom';
 import cart from '../images/basket.png'
 import './style/Nav.scss';
 
 const Nav = ({qtyCounter}) => {
-
 
     return <div className="nav">
         <ul className="menu">
@@ -17,7 +16,9 @@ const Nav = ({qtyCounter}) => {
             <li>MARKET</li>
         </ul>
         <ul className="cart">
-            <li><NavLink to="/cart"><img src={cart}></img></NavLink><span>{qtyCounter}</span></li>
+            
+            <li><NavLink to="/cart" className={!qtyCounter? 'disabled' : ''}><img src={cart} ></img><span>{qtyCounter}</span></NavLink></li>
+
         </ul>
     </div>
 }
