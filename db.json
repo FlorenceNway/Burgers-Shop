@@ -98,15 +98,7 @@
     }
   ],
   "customers": [
-    {
-      "firstname": "Flo",
-      "lastname": "Nway",
-      "email": "flo@email.com",
-      "password": "flo",
-      "mobileNumber": "123",
-      "postcode": "123",
-      "id": 1
-    }
+   
   ],
   "orders": [
     
