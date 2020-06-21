@@ -2,17 +2,104 @@
     display: flex;
     width: 100%;
 
-    .orders {
+    .ordersEdit {
         width: 50%;
-        height: auto;
-        display: flex;
-        margin-top: 50px;
-        flex-wrap: wrap;
+        background: black;
+        margin: 90px 20px 20px;
+        color: white;
+
+        .basket {
+            margin-top: 20px;
+           span {
+            &:first-child{
+                margin-right: 15px;
+                width: 20%;
+                margin: 10px 15px 0;
+            }
+            &:last-child {
+                padding: 10px 20px;
+                background: #f9c747;
+            }
+           }
+            
+        }
+        .delivery, .price, .recipePrice{
+            display: flex;
+            justify-content: space-between;
+            height: 30px;
+            border-top: 1px solid;
+            border-bottom: 1px solid;
+            width: 90%;
+            margin: auto;
+            padding: 10px;
+        }
+        .ordersWrapper {
+            overflow: scroll;
+            position: relative;
+            height: 40vh;
+        
+        .orders {         
+            height: auto;
+            margin-top: 50px;
+            flex-wrap: wrap;
+        
+            .order {
+                margin: 20px;
+                display: flex;
+                flex-direction: column;
+                background: rgba(23, 22, 22, 0.43);
+
+                .delete {
+                    color: #f9c747;
+                    background-color: transparent;
+                    font-size: 1.2em;
+                    position: absolute;
+                    right: 43px;
+                    border: none;
+                    cursor: pointer;
+                }
+                .recipe {
+                    display: flex;
+
+                    .recipeDescription {
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        margin: 10px 0 20px 10px;
+                        width: 50%;
+
+                        li {
+                            margin: 10px;
+                            span{
+                                margin-left: 13px;
+                            }
+                        }
+                        .editQty {
+                            text-align: right;
+                            input{
+                                background: #FFC700;
+                                border: none;
+                                padding: 16px;
+                                width: 26px;
+                                text-align: center;
+                                
+                            }    
+                        }
+                    }
     
-        .recipe {
-            margin: 20px;
+                    .recipePhoto {
+                        width:50%;
+                        img {
+                            width: 100%;
+                        }
+                    }
+                }
+                
+            }
+            
         }
     }
+} 
     
     .customersDetails {
         width: 50%;
