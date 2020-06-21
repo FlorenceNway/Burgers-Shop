@@ -20,14 +20,16 @@ function App() {
 		const itemIndexInCart = localCart.findIndex((item) => item.id === order.id);
 	
 		if (itemIndexInCart !== -1) {
-		localCart[itemIndexInCart].qty += 1;
+			localCart[itemIndexInCart].qty += 1;
+			
 		} else {
 			if(order){
 				localCart.push(order);
 			}	
 		}
-
-		console.log(localCart)
+	
+		console.log('order',order)
+		order && setQtyCounter(qtyCounter + 1)
 		setOrders(localCart)
 		
 	},[order])
@@ -38,22 +40,18 @@ function App() {
 					<Switch>
 						<Route exact path="/" component={OnTheMenu}/>
 						<Route exact path="/recipes" component={Recipes} />
-
 						<Route
 							path='/recipes/:id'
 							render={(props) => (
 								<RecipeDetail {...props} setQtyCounter={setQtyCounter} qtyCounter={qtyCounter} 
-								order={order} setOrder={setOrder} orders={orders}
-								/>
+								order={order} setOrder={setOrder} orders={orders}/>
 							)}
 						/>
-
 						<Route path="/cart" >
-							<OrderDetail qtyCounter={qtyCounter} orders={orders}/>
+							<OrderDetail setQtyCounter={setQtyCounter} qtyCounter={qtyCounter} orders={orders} setOrders={setOrders}/>
 						</Route>
 					</Switch>
 					<Footer />
-					
 				</div>
 			</Router>
 }
