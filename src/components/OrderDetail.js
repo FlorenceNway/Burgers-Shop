@@ -49,7 +49,7 @@ const OrderDetail = ({orders, setOrders, qtyCounter, setQtyCounter}) => {
         setQtyCounter(0)
     } 
 
-    
+
     useEffect (() => {
         const localCart = [...localOrders]
         const quantities = localCart.map(order => order.qty)
@@ -135,7 +135,7 @@ const OrderDetail = ({orders, setOrders, qtyCounter, setQtyCounter}) => {
                     </div> 
                     <div className='recipePrice'>
                         <p></p>
-                        <p>£15</p>
+                            <p>£<span>{15 * qtyCounter}</span></p>
                     </div>
                     <div className='delivery'>
                         <p>Delivery Fee</p>
@@ -143,7 +143,7 @@ const OrderDetail = ({orders, setOrders, qtyCounter, setQtyCounter}) => {
                     </div>
                     <div className='price'>
                         <p>TOTAL PRICE</p>
-                        <p>£15</p>
+                            <p>£<span>{(15 * qtyCounter)+15}</span></p>
                     </div>
                 </div>
             </div>
