@@ -15,9 +15,7 @@ const RecipeDetail = ({match, setQtyCounter, qtyCounter, order, setOrder}) => {
 
 
     const addToBasket = () => {
-
         setOrder({...order, id: id, qty: 1, recipe: recipe})
-        
     }
     
     return  <div className="recipeDetail">
