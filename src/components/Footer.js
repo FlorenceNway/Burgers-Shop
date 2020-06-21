@@ -1,5 +1,4 @@
 import React from 'react';
-import social from '../images/socialIcon.png'
 import "./style/Footer.scss";
 
 const Footer = () => {
