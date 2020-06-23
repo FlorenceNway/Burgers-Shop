@@ -1,14 +1,15 @@
-# Recipes Booking App
+# Recipes Book App
+
 
 ### To run:
-npm start
-json-server -p 3001 db.json
+# npm start
+# json-server -p 3001 db.json
 
 #### Features
 1. React Router is used to navigate between pages.
 2. Mock Database is used to fetch recipes and store orders.
 3. Main Page
-    - when click on `Get started` it navigate to receipts page.
+    - when click on `Get started` it navigate to receipes page.
 
 4. PLP - Product listing page - 2nd page
     - when click on `Get started` it scrolls to list section.
@@ -27,4 +28,3 @@ json-server -p 3001 db.json
     - when user filled up the order form and click submit, the order will be stored in database with customer details and ordered items.
     - in the same time, a customer will be added to `customers` list in DB for future mail campaigns. 
     it won't add a customer twice by checking the unique email.
-        
