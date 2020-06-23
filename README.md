@@ -1,9 +1,8 @@
-# Recipes Book App
-
+# Recipes Booking  App
 
 ### To run:
-# npm start
-# json-server -p 3001 db.json
+#### npm start
+#### json-server -p 3001 db.json
 
 #### Features
 1. React Router is used to navigate between pages.
