@@ -28,7 +28,6 @@ function App() {
 			}	
 		}
 	
-		console.log('order',order)
 		order && setQtyCounter(qtyCounter + 1)
 		setOrders(localCart)
 		
