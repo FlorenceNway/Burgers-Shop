@@ -4,7 +4,7 @@ import Ingredient from './Ingredient';
 import SpecialOffer from './SpecialOffer';
 import "./style/RecipeDetail.scss"
 
-const RecipeDetail = ({match, setQtyCounter, qtyCounter, order, setOrder}) => {
+const RecipeDetail = ({match, order, setOrder}) => {
     
     const [recipe, setRecipe] = useState({})
     const id = match.params.id
