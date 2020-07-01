@@ -7,7 +7,7 @@ import "./style/RecipeDetail.scss"
 const RecipeDetail = ({match, order, setOrder}) => {
     
     const [recipe, setRecipe] = useState({})
-    const id = match.params.id
+    const id = match.params.id //id from the route url
 
     useEffect(() => {
         API.getRecipe(id).then(recipe => setRecipe(recipe))
