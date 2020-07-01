@@ -17,10 +17,11 @@ function App() {
 	useEffect(() => {
 		
 		const localCart = [...orders]
-		const itemIndexInCart = localCart.findIndex((item) => item.id === order.id);
+		//check if order is already in the cart, get that order index
+		const itemIndex = localCart.findIndex((item) => item.id === order.id);
 	
-		if (itemIndexInCart !== -1) {
-			localCart[itemIndexInCart].qty += 1;
+		if (itemIndex !== -1) {
+			localCart[itemIndex].qty += 1;
 			
 		} else {
 			if(order){
