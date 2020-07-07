@@ -1,4 +1,4 @@
-# Recipes Booking  App
+# Bugers Booking App
 
 ### To run:
 #### npm start
