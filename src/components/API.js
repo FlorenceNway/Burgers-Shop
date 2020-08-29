@@ -1,4 +1,5 @@
-const baseURL = "http://localhost:3001"
+//const baseURL = "http://localhost:3001"
+const baseURL = "https://tested-rose-silver.glitch.me";
     
 const getRecipes = (number) => fetch(`${baseURL}/Recipes?_page=1&_limit=${number}`).then(recipe => recipe.json());
 
