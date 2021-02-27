@@ -1,15 +1,18 @@
-# Bugers Booking App
+# Burgers Booking App
 
-This is a burger shop website to choose the burgers, check the product details, review and update the checkout, and order the burger by filing the customer
+This is a burger shop app to choose the burgers, check the product details, review and update in checkout, and order the burger by filing the customer
 details form.
 
-### To run:
+#### Tech Stack
 
-#### npm start
+- React Hooks
 
-#### json-server -p 3001 db.json
+### To run open 2 terminals:
 
-#### Features
+- npm start
+- json-server -p 3001 db.json
+
+### Features
 
 1. React Router is used to navigate between pages.
 2. Mock Database is used to fetch recipes and store orders.
