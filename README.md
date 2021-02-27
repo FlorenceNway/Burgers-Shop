@@ -1,13 +1,18 @@
 # Burgers Booking App
 
-This is a burger shop app to choose the burgers, check the product details, review and update in checkout, and order the burger by filing the customer
-details form.
+###### Design link
+
+<hr>
+https://www.figma.com/file/VQz2NrvK8lPykD91kedoKJ/e-commerce_2?node-id=43%3A2
+<hr>
+
+This is a burger shop app to choose the burgers, check the product details, review and update in checkout, and order the burger by filing the customer details form.
 
 #### Tech Stack
 
 - React Hooks
 
-### To run open 2 terminals:
+### To run, open 2 terminals:
 
 - npm start
 - json-server -p 3001 db.json
